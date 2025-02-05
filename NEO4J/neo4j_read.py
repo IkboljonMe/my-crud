@@ -7,7 +7,7 @@ def read_node():
     result = session.run("MATCH (s:Student {student_number: 47563}) RETURN s")
     for record in result:
         print(f"📄 Node: {record['s']}")
-    print(f"✅ Read Operation Time: {time.time() - start_time} seconds")
+    print(f"🟢 Read Operation Time: {time.time() - start_time} seconds")
     session.close()
 
 if __name__ == "__main__":
